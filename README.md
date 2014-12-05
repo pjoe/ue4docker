@@ -7,7 +7,9 @@ Docker file for building ue4 on Linux
 
 1. Get github OAUTH_TOKEN with at least repo access: https://help.github.com/articles/creating-an-access-token-for-command-line-use/
 
-2. ```
+2. In a terminal (bash):
+
+```
 $ export OAUTH_TOKEN=<my_token>
 $ docker build -t pjoe/ue4:4.6 .
 $ docker run -ti --rm -e OAUTH_TOKEN -v <host-ue4-dir> -w /opt/ue4 pjoe/ue4:4.6
