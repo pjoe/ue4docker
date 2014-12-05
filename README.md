@@ -25,6 +25,6 @@ $ docker run -ti --rm -e OAUTH_TOKEN -v <host-ue4-dir> -w /opt/ue4 pjoe/ue4:4.6
 # make ShaderCompileWorker UnrealLightmass UnrealPak UE4Editor
 # exit
 
-$ chown -R <myuser>:<myuser> <host-ue4-dir>
+$ sudo chown -R <myuser>:<myuser> <host-ue4-dir>
 ```
 
