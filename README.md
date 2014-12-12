@@ -15,10 +15,10 @@ Docker file for building ue4 on Linux
 $ git clone https://github.com/pjoe/ue4docker
 $ cd ue4docker
 $ export OAUTH_TOKEN=<my_token>
-$ docker build -t pjoe/ue4:4.6 .
-$ docker run -ti --rm -e OAUTH_TOKEN -v <host-ue4-dir>:/opt/ue4 -w /opt/ue4 pjoe/ue4:4.6
+$ docker build -t pjoe/ue4 .
+$ docker run -ti --rm -e OAUTH_TOKEN -v <host-ue4-dir>:/opt/ue4 -w /opt/ue4 pjoe/ue4
 
-# git clone https://$OAUTH_TOKEN@github.com/EpicGames/UnrealEngine -b 4.6
+# git clone https://$OAUTH_TOKEN@github.com/EpicGames/UnrealEngine -b release
 # cd UnrealEngine
 # ./Setup.sh
 # ./GenerateProjectFiles.sh
